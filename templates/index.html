@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{%  block content %}
+    <div class= "revies-form">
+        <h1>Оставить отзыв</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p><input type="submit" value="Отставить отзыв"></p>
+        </form>
+    </div>
+{% endblock %}
