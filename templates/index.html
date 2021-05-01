@@ -5,7 +5,14 @@
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <p><input type="submit" value="Отставить отзыв"></p>
+            <p><input type="submit" value="Отставить отзыв" onclick="window.location.reload();"></p>
+             {{ showform.as_p }}
         </form>
     </div>
+{#    <div class="show-form">#}
+{#        <form method="POST">#}
+{#            {% csrf_token %}#}
+{#            {{ showform.as_p }}#}
+{#        </form>#}
+{#    </div>#}
 {% endblock %}
