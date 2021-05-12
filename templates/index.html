@@ -7,13 +7,12 @@
             {{ form.as_p }}
 {#            {{ showform.as_p }}#}
             <p><input type="submit" value="Отставить отзыв"></p>
-
         </form>
     </div>
-{#    <div class="show-form">#}
-{#        <form method="POST">#}
-{#            {% csrf_token %}#}
-{#            {{ showform.as_p }}#}
-{#        </form>#}
-{#    </div>#}
+    <div class="show-form">
+    <h2>Все отзывы</h2>
+        <p>{{ name }}</p>
+       <p>{{ review }</p>
+    </div>
+
 {% endblock %}
