@@ -10,7 +10,7 @@ def Revies(request):
             name = data.get("name")
             email = data.get("email")
             review = data.get("review")
-            with open("./data.csv", "a") as file:
+            with open("./data.csv", "a", encoding='cp1251') as file:    #добавил encoding
                 file.write(f"{name}|{email}|{review}\n")
             return redirect(Revies)
         form = Revies_form()
