@@ -10,8 +10,10 @@
     </div>
     <div class="show-form">
     <h2>Все отзывы</h2>
-        <p>{{ name }}</p>
-       <p>{{ review }}</p>
+        {%  for item in Revies_1 %}
+        <p>Оставил <em>{{ Revies_1.name }}</em></p>
+        <p>{{ Revies_1.revies }}</p>
+        {% endfor %}
     </div>
 
 {% endblock %}
