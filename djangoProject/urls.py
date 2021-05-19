@@ -19,5 +19,5 @@ from revies.views import Revies
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Revies ),
+    path('', Revies),
 ]

@@ -8,4 +8,12 @@
             <p><input type="submit" value="Отставить отзыв"></p>
         </form>
     </div>
+    <div class="show-form">
+    <h2>Все отзывы</h2>
+        {%  for item in Revies_1 %}
+        <p>Оставил <em>{{ Revies_1.name }}</em></p>
+        <p>{{ Revies_1.revies }}</p>
+        {% endfor %}
+    </div>
+
 {% endblock %}
